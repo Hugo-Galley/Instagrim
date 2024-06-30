@@ -27,7 +27,37 @@
 .App-link {
   color: #61dafb;
 }
-
+.MainLayout{
+  display: flex;
+  align-items: flex-start;
+}
+.Espacement{
+  background: blue;
+  width: 20vw;
+  height: 100vw;
+}
+.InfoCompte{
+  background: pink;
+  width: 30vw;
+  height: 100vw;
+}
+.container{
+  display: flex;
+  align-items: flex-start;
+}
+.BarStory{
+  margin-top: 1vw;
+  background: red;
+  display: flex;
+  gap: 20px;
+  width: 40vw;
+  justify-content: center;
+}
+.story{
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

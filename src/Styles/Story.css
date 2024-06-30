@@ -1,0 +1,28 @@
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+.image-container::before{
+    content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+  z-index: 0;
+}
+.profilPhoto {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    position: relative;
+    z-index: 1;
+  }
+  p{
+    margin-top: 0.4vw;
+  }

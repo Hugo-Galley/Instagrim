@@ -1,7 +1,7 @@
 Styles de base
 nav {
     border-right: solid 1px grey;
-    width: 10%;
+    width: 20vw;
     height: 100vh;
     position: fixed; 
     top: 0;
@@ -26,7 +26,7 @@ nav {
     width: 7rem;
     height: auto;
     max-height: 5rem;
-    margin-left: 1%;
+    margin-left: 1.5vw;
     margin-bottom:2rem ;
     overflow: hidden; 
 }
@@ -65,7 +65,7 @@ svg {
 
 @media (max-width: 93em) { 
     nav {
-        width: 20%;
+        width: 15vw;
     }
 
     .Nav-Menu {
@@ -78,7 +78,7 @@ svg {
     }
 
     .Nav-PlusInfo {
-        margin-top: 20vh;
+        margin-top: 15vw;
     }
 
     li {
