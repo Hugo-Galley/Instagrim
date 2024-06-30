@@ -1,4 +1,4 @@
-/* Styles de base */
+Styles de base
 nav {
     border-right: solid 1px grey;
     width: 10%;
@@ -23,14 +23,15 @@ nav {
 
 .Nav-Logo {
     margin-top: 2rem;
-    width: 70%;
+    width: 7rem;
     height: auto;
     max-height: 5rem;
+    margin-left: 1%;
+    margin-bottom:2rem ;
     overflow: hidden; 
 }
-
 .Nav-PlusInfo {
-    margin-top: 28vh;
+    margin-top: 30vh;
     overflow: hidden; 
     text-overflow: ellipsis; 
 }
@@ -85,7 +86,7 @@ svg {
     }
 }
 
-/* Écran small (smartphones) */
+
 @media (max-width: 30em) { /* 480px */
     nav {
         width: 30%;

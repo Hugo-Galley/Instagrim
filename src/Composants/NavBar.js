@@ -1,5 +1,5 @@
 import '../Styles/NavBar.css';
-import instaLogo from '../items/instaLogo.svg'
+import instaLogo from '../items/instaLogoWhite.svg'
 
 function NavBar(){
     return(
