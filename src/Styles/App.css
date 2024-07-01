@@ -36,6 +36,8 @@
   height: 100vw;
 }
 .InfoCompte{
+  margin-top: 2vw;
+  margin-left: 3vw;
   width: 30vw;
   height: 100vw;
 }
@@ -58,6 +60,10 @@
 }
 .CentreLayout{
   max-width: 40vw;
+}
+.LegalCredits{
+  color: grey;
+  font-size: 0.8em;
 }
 @keyframes App-logo-spin {
   from {
