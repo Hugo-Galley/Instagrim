@@ -20,6 +20,8 @@ function App() {
             </div>
             <div className='Feed'>
               <CardPost key={1} content={"video.mp4"} />
+              <CardPost key={1} content={"video.mp4"} />
+              <CardPost key={1} content={"video.mp4"} />
             </div>
           </div>
           <div className='InfoCompte'>
