@@ -1,5 +1,5 @@
 Styles de base
-nav {
+.NavBar {
     border-right: solid 1px grey;
     width: 20vw;
     height: 100vh;
@@ -16,12 +16,15 @@ nav {
     align-items: flex-start;
     padding: 0;
     margin: 0;
+    margin-top: 15vh;
     overflow: hidden; 
     white-space: nowrap; 
     text-overflow: ellipsis; 
+    position: fixed;
 }
 
 .Nav-Logo {
+    position: fixed;
     margin-top: 2rem;
     width: 7rem;
     height: auto;
@@ -31,9 +34,10 @@ nav {
     overflow: hidden; 
 }
 .Nav-PlusInfo {
-    margin-top: 30vh;
+    margin-top: 85vh;
     overflow: hidden; 
     text-overflow: ellipsis; 
+    position: fixed;
 }
 
 ul {
@@ -63,8 +67,9 @@ svg {
     margin-right: 1.25rem; 
 }
 
-@media (max-width: 93em) { 
+@media (max-width: 90em) { 
     nav {
+        position: fixed;
         width: 15vw;
     }
 

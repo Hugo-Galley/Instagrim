@@ -32,12 +32,10 @@
   align-items: flex-start;
 }
 .Espacement{
-  background: blue;
-  width: 20vw;
+  width: 30vw;
   height: 100vw;
 }
 .InfoCompte{
-  background: pink;
   width: 30vw;
   height: 100vw;
 }
@@ -46,17 +44,20 @@
   align-items: flex-start;
 }
 .BarStory{
-  margin-top: 1vw;
-  background: red;
   display: flex;
   gap: 20px;
-  width: 40vw;
+  max-width: 40vw;
   justify-content: center;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 .story{
   display: inline-block;
   text-align: center;
   margin: 20px;
+}
+.CentreLayout{
+  max-width: 40vw;
 }
 @keyframes App-logo-spin {
   from {

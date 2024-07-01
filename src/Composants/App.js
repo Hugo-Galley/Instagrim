@@ -3,6 +3,7 @@ import './NavBar'
 import React from 'react';
 import NavBar from './NavBar';
 import BarStory from './BarreStory'
+import CardPost from './CardPost';
 
 function App() {
   return (
@@ -12,11 +13,14 @@ function App() {
           <NavBar />
         </div>
         <div className='MainLayout'>
-          <div className='Espacement'>
-
-          </div>
-          <div className='BarStory'>
-              <BarStory />
+          <div className='Espacement'/>
+          <div className='CentreLayout'>
+            <div className='BarStory'>
+                <BarStory />
+            </div>
+            <div className='Feed'>
+              <CardPost key={1} content={"video.mp4"} />
+            </div>
           </div>
           <div className='InfoCompte'>
 
