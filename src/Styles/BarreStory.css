@@ -1,50 +1,75 @@
-.BarStory {
+.bar-story {
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .story-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+  }
+  
+  .story-container::-webkit-scrollbar {
+    display: none;  
+  }
+  
+  .story-item {
+    flex: 0 0 auto;
+    width: 70px;
+    margin-right: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    max-width: 40vw;
-    overflow: auto;
-}
-
-.carousel-container {
-    overflow-x: hidden; 
+  }
+  
+  .story-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .story-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .story-username {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
-}
-
-.carousel {
-    display: inline-flex;
-    flex-wrap: nowrap;
-}
-
-.carousel > * {
-    flex: 0 0 auto;
-    margin-right: 5px; 
-}
-.BarStory::-webkit-scrollbar {
-    width: 5px; 
-}
-
-.BarStory::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2); 
-    border-radius: 5px; 
-}
-
-.BarStory::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.1); 
-    border-radius: 5px; 
-}
-
-.BarStory {
-    scrollbar-width: thin; 
-}
-
-.BarStory::-webkit-scrollbar {
-    width: 5px; 
-    background-color: rgba(0, 0, 0, 0.1); 
-}
-
-.BarStory::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2); 
-    border-radius: 5px; 
-}
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scroll-button.left {
+    left: 5px;
+  }
+  
+  .scroll-button.right {
+    right: 5px;
+  }
