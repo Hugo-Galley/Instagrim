@@ -45,3 +45,23 @@
     
     width: 32vw;
 }
+.LikeButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .LikeButton svg {
+    display: block;
+    fill: white; 
+  }
+  
+  .LikeButton:hover svg {
+    fill: #ff6b6b; 
+  }
+  
+  .LikeButton.active svg {
+    fill: #ff6b6b; 
+  }
