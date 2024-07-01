@@ -69,22 +69,11 @@ svg {
 
 @media (max-width: 90em) { 
     nav {
-        position: fixed;
         width: 15vw;
     }
 
-    .Nav-Menu {
-        font-size: 1em;
-    }
 
-    .Nav-Logo {
-        width: 60%;
-        max-height: 6rem;
-    }
 
-    .Nav-PlusInfo {
-        margin-top: 15vw;
-    }
 
     li {
         margin-top: 1.875rem; /* 30px */
