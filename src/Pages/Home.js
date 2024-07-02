@@ -9,9 +9,7 @@ function Home() {
   return (
     <React.Fragment>
       <div className='container'>
-        <div className='NavBar'>
-          <NavBar />
-        </div>
+
         <div className='MainLayout'>
           <div className='Espacement'/>
           <div className='CentreLayout'>

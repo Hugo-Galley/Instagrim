@@ -1,0 +1,136 @@
+.desciption{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60%;
+}
+.top-description{
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    text-align: center;
+    align-items: center;
+}
+.midlle-description{
+    display: flex;
+    flex-direction: row;
+}
+.ProfilePicture{
+    margin-top: 1vw;
+    width: 30%;
+    height: 60%;
+}
+.ppPicture{
+    border-radius: 50%;
+    width: 60%;
+    margin: 10% 20%;
+    margin-top: 2vw;
+}
+.Pseudo{
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+.StoryUne{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    justify-content: start;
+}
+.StoryUneFiche{
+    margin-left: 0.5vw;
+    width: 10%;
+    height: 80%;
+    border-radius: 50%;
+}
+.titre{
+    margin-left: 1.3vw;
+    font-size: 0.8em;
+}
+p{
+    margin-right: 1vw;
+}
+button {
+    background-color: #333333;
+    color: white;
+    border: none;
+    padding: 8px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+button:active {
+    background-color: #222222;
+}
+.DescriptionProfile{
+    display: flex;
+    flex-direction: row;
+}
+.FicheProfile{
+    display: flex;
+    flex-direction: column;
+    margin: 0 35%;
+    width: 40%;
+    height: 60%;
+    border-bottom: 1px solid grey;
+}
+.FeedCompte{
+    display: flex;
+    flex-direction: column;
+    margin: 0 35%;
+    width: 40%;
+    height: 60%;
+}
+.FeedCompte ul{
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.FeedCompte li{
+    margin:  0.5vw 10px;
+    margin-left: 1vw;
+}
+.FeedCompte p{
+}
+.FeedCompte svg{
+    width: 60%;
+    margin-right: 10px;
+}
+.gridStyle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+  }
+  
+  .itemStyle{
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+  }
+.legaltext{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vw;
+    flex-wrap: nowrap;
+    color: grey;
+    font-size: 0.7em;
+}
