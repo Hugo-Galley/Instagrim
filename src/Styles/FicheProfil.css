@@ -130,7 +130,7 @@ button:active {
     display: flex;
     flex-direction: row;
     margin-top: 1vw;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     color: grey;
     font-size: 0.7em;
 }
