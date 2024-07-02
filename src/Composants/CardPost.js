@@ -14,13 +14,23 @@ function EnteteCard({username,profilePicture}){
 }
 
 function DescriptionCard({ initialNbrLike, nbrComment, description, timeStampPost }) {
-    const [nbrLike, setNbrLike] = useState(() => {
-        const parsedLike = parseInt(initialNbrLike, 10);
-        return isNaN(parsedLike) ? 0 : parsedLike;
-    });
+    const [nbrLike, setNbrLike] = useState(initialNbrLike);
     const [userLiked, setUserLiked] = useState(false);
-    
-    const TimeEcoule = "Il y'a 3 minutes";
+    let phrase = ""
+    const now = Date.now();
+    let TimeEcoule = (now - timeStampPost) / 1000; 
+    if (TimeEcoule < 60){
+        phrase = "Il y'a " + Math.floor(TimeEcoule) + " secondes"
+    }
+    else if (TimeEcoule < 3600){
+        phrase = "Il y'a " + Math.floor(TimeEcoule / 60) + " minutes"  
+    }
+    else if (TimeEcoule < 86400){
+        phrase = "Il y'a " + Math.floor(TimeEcoule / 3600) + " heures"  
+    }
+    else {
+        phrase = "Il y'a " + Math.floor(TimeEcoule / 86400) + " jours"  
+    }
 
     function toggleLike() {
         if (userLiked) {
@@ -30,8 +40,6 @@ function DescriptionCard({ initialNbrLike, nbrComment, description, timeStampPos
         }
         setUserLiked(prevLiked => !prevLiked);
     }
-
-    // Reset nbrLike if initialNbrLike changes
     useEffect(() => {
         const parsedLike = parseInt(initialNbrLike, 10);
         setNbrLike(isNaN(parsedLike) ? 0 : parsedLike);
@@ -77,7 +85,7 @@ function DescriptionCard({ initialNbrLike, nbrComment, description, timeStampPos
             <p>{nbrLike} J'aime</p>
             <p>{description}</p>
             <p>Afficher les {nbrComment} commentaires</p>
-            <p>Poster {TimeEcoule} </p>
+            <p>Poster {phrase} </p>
         </div>
     )
 }
@@ -89,7 +97,7 @@ function CardPost({content}){
             <div>
             <img src={contentPng} alt='Contenu du Post' className='content'/>
             </div>
-            <DescriptionCard key={1} nbrLike={11} nbrComment={356} timeStampPost={1688216938} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat tortor sit amet ex auctor aliquet. Donec semper ex mauris, vitae eleifend turpis vestibulum id. Nunc euismod metus vitae odio tincidunt ultricies. Sed sed purus est. Donec efficitur, ante sit amet convallis placerat, ante erat iaculis ante, aliquam posuere mauris quam vel tellus. Quisque vestibulum accumsan luctus. Nunc id purus finibus orci rhoncus malesuada. Nullam varius, quam eu iaculis auctor, magna metus posuere justo, vel ornare sem enim sed sem. Duis venenatis leo nibh."}/>
+            <DescriptionCard key={1} initialNbrLike={11} nbrComment={356} timeStampPost={1719919650746} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat tortor sit amet ex auctor aliquet. Donec semper ex mauris, vitae eleifend turpis vestibulum id. Nunc euismod metus vitae odio tincidunt ultricies. Sed sed purus est. Donec efficitur, ante sit amet convallis placerat, ante erat iaculis ante, aliquam posuere mauris quam vel tellus. Quisque vestibulum accumsan luctus. Nunc id purus finibus orci rhoncus malesuada. Nullam varius, quam eu iaculis auctor, magna metus posuere justo, vel ornare sem enim sed sem. Duis venenatis leo nibh."}/>
             
         </div>
     );
