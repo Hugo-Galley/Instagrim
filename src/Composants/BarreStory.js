@@ -3,7 +3,7 @@ import pp1 from '../items/99678890.jpeg';
 import pp2 from '../items/instaLogo.svg';
 import pp3 from '../items/instaLogoWhite.svg';
 import Story from './Storys';
-import '../Styles/BarreStory.css'
+import '../Styles/Home.css'
 
 export default function BarStory() {
     const scrollRef = useRef(null);

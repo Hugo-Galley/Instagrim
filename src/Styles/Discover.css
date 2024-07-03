@@ -1,0 +1,22 @@
+
+.DiscoveryFeed{
+    width: 40%;
+    align-items: center;
+    margin: 0 35%;
+}
+
+.gridStyle {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+  }
+  
+.itemStyle{
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 300px;
+    text-align: center;
+}

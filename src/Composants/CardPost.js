@@ -1,5 +1,4 @@
 import React, { useState, useEffect  } from 'react';
-import '../Styles/CardPost.css'
 import logoTest from '../items/99678890.jpeg'
 import contentPng from '../items/content.jpg'
 

@@ -1,5 +1,3 @@
-import '../Styles/FicheContact.css'
-
 export default function FicheContact({username,pseudo,profilePicture}){
     return (
         <div className="FicheContact">

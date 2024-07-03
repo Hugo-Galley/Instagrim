@@ -1,4 +1,4 @@
-import '../Styles/FicheProfil.css'
+import '../Styles/Profil.css'
 import test from '../items/99678890.jpeg'
 
 function InfoCompte({username,nbrPublications, nbrFollowers, nbrSuivis,profilPicture}){

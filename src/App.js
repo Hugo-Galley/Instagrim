@@ -1,9 +1,10 @@
-import '../Styles/App.css';
+import './Styles/App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from '../Pages/Home';
-import NavBar from './NavBar'; // Assurez-vous d'importer NavBar
-import Search from '../Pages/Search';
-import Profile from '../Pages/Profil';
+import Home from './Pages/Home';
+import NavBar from './Composants/NavBar'; 
+import Search from './Pages/Search';
+import Profile from './Pages/Profil';
+import Dicover from './Pages/Discover';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/Search' element={<Search />} />
         <Route path='/profil' element={<Profile />} />
+        <Route path='/discover' element={<Dicover />} />
       </Routes>
     </Router>
   );

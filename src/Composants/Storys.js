@@ -1,4 +1,3 @@
-import '../Styles/Story.css'
 function Story({username,profilPhoto}){
     return(
         <div className="story">
