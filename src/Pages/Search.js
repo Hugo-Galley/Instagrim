@@ -1,5 +1,4 @@
-import React from 'react';
-import FicheProfil from '../Composants/Ficheprofil';
+import '../Styles/Search.css'
 
 export default function Search(){
 

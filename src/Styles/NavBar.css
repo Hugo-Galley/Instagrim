@@ -1,8 +1,7 @@
-Styles de base
 .NavBar {
     border-right: solid 1px grey;
-    width: 20vw;
     height: 100vh;
+    width: 10vw;
     position: fixed; 
     top: 0;
     left: 0;
@@ -40,6 +39,15 @@ Styles de base
     position: fixed;
 }
 
+.link-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+}
+.link-item p{
+     margin-top: 13px; 
+}
 ul {
     list-style: none;
     padding: 0;
@@ -48,7 +56,7 @@ ul {
 }
 
 li {
-    margin-top: 2.5rem;
+    margin: 0.8vw;
     margin-left: 1.25rem;
     display: flex;
     align-items: center;
@@ -68,13 +76,9 @@ svg {
 }
 
 @media (max-width: 90em) { 
-    nav {
+    .NavBar {
         width: 15vw;
     }
-
-
-
-
     li {
         margin-top: 1.875rem; /* 30px */
     }
@@ -82,7 +86,7 @@ svg {
 
 
 @media (max-width: 30em) { /* 480px */
-    nav {
+    .NavBar {
         width: 30%;
         border-right: none;
         border-bottom: solid 1px grey;

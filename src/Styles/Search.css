@@ -1,0 +1,19 @@
+li{
+    margin: 1vw;
+}
+.profil-active .link-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+}
+.profil-active .link-item p{
+    visibility: hidden;
+     margin-top: 13px; 
+}
+.profil-active .Nav-Logo{
+    visibility: hidden;
+}
+.profil-active{
+    width: 3% !important;
+}
