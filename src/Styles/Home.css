@@ -1,151 +1,158 @@
 .bar-story {
-    position: relative;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .story-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 10px 0;
-  }
-
-  .story-container::-webkit-scrollbar {
-    display: none;
-  }
-
-  .story-item {
-    flex: 0 0 auto;
-    width: 70px;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .story-photo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-
-  .story-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .story-username {
-    margin-top: 5px;
-    font-size: 12px;
-    text-align: center;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .scroll-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    line-height: 1;
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .scroll-button.left {
-    left: 5px;
-  }
-
-  .scroll-button.right {
-    right: 5px;
-  }
-  .DescriptionCard{
-    padding-left: 0.5vw;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.IconDesciption{
+.story-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
 
-    display: inline-flex;
-    vertical-align: middle;
-    list-style: none;
-    margin-top: 0.5vw;
-    width: 33vw;
+.story-container::-webkit-scrollbar {
+  display: none;
 }
-.IconDesciption ul{
-    display: flex;
-    flex-direction: row;
-    padding: 0;
+
+.story-item {
+  flex: 0 0 auto;
+  width: 70px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.story-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.story-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-username {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-button.left {
+  left: 5px;
+}
+
+.scroll-button.right {
+  right: 5px;
+}
+
+.DescriptionCard {
+  padding-left: 0.5vw;
+}
+
+.IconDesciption {
+  display: inline-flex;
+  vertical-align: middle;
+  list-style: none;
+  margin-top: 0.5vw;
+  width: 33vw;
+}
+
+.IconDesciption ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
 .IconDesciption ul li {
-    margin: 0 1px;
+  margin: 0 1px;
 }
-.CardPost{
-    overflow: hidden;
-    width: 80%;
-    height: 20%;
-    margin: auto;
-    margin-top: 1vw;
-    border: 1px outset #c7b9b9;
-    border-radius: 1%;
-}
-.EnTete{
-    display: flex;
-    margin: auto;
-    padding: 10px ;
-    flex-direction: row;
-    border-bottom: 3px solid grey;
-}
-.EnTete img{
 
-    border-radius: 50%;
-    width: 2.2rem;
-    height: 2.2rem;
-    margin-right:0.5vw;
+.CardPost {
+  overflow: hidden;
+  width: 80%;
+  height: 20%;
+  margin: auto;
+  margin-top: 1vw;
+  border: 1px outset #c7b9b9;
+  border-radius: 1%;
 }
-.content{
 
-    width: 32vw;
+.EnTete {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  flex-direction: row;
+  border-bottom: 3px solid grey;
 }
+
+.EnTete img {
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-right: 0.5vw;
+}
+
+.content {
+  width: 32vw;
+}
+
 .LikeButton {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    outline: none;
-  }
-
-  .LikeButton svg {
-    display: block;
-    fill: white;
-  }
-
-  .LikeButton:hover svg {
-    fill: #ff6b6b;
-  }
-
-  .LikeButton.active svg {
-    fill: #ff6b6b;
-  }
-  .image-container{
-    position: relative;
-    display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
 }
-.image-container::before{
-    content: '';
+
+.LikeButton svg {
+  display: block;
+  fill: white;
+}
+
+.LikeButton:hover svg {
+  fill: #ff6b6b;
+}
+
+.LikeButton.active svg {
+  fill: #ff6b6b;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container::before {
+  content: '';
   position: absolute;
   top: -2px;
   left: -2px;
@@ -153,47 +160,63 @@
   bottom: -2px;
   border-radius: 50%;
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-
   z-index: 0;
 }
-.profilPhoto {
-    display: block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid transparent;
-    position: relative;
-    z-index: 1;
-  }
-  p{
-    margin-top: 0.4vw;
-  }
 
-.FicheContact{
+.profilPhoto {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+}
+
+p {
+  margin-top: 0.4vw;
+}
+
+.FicheContact {
   display: flex;
   flex-direction: row;
   max-width: 15vw;
   margin-bottom: 1vw;
 }
-.FicheContact img{
+
+.FicheContact img {
   width: 2.5vw;
   height: 2.5vw;
   border-radius: 50%;
-
 }
-.info-name p{
+
+.info-name p {
   display: flex;
   flex-direction: column;
   margin: 0 0.5vw;
 }
-.info-name{
+
+.info-name {
   margin-top: 0.1vw;
 }
-.Suivre{
+
+.Suivre {
   text-align: center;
   margin-top: 0.8vw;
   margin-left: 3vw;
 }
-.SugForYou{
+
+.SugForYou {
   margin-bottom: 2vw;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .DescriptionCard, .IconDesciption, .CardPost, .content, .FicheContact {
+    width: 100%;
+  }
+
+  .Suivre {
+    margin-left: 0;
+  }
 }

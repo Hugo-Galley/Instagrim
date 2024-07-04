@@ -22,6 +22,7 @@ function Home() {
               <CardPost key={1} content={"video.mp4"} />
             </div>
           </div>
+          </div>
           <div className='InfoCompte'>
             <FicheContact key={1} username={"hugigogo_"} pseudo={"SuperBg"} profilePicture={test} />
             <p className='SugForYou'>Suggestions pour vous</p>
@@ -32,7 +33,6 @@ function Home() {
             <p className='LegalCredits'>À propos Aide Presse API Emplois
             <br/>Confidentialité Conditions Lieux Langue <br/>Meta Verified</p>
           </div>
-        </div>
       </div>
     
     </React.Fragment>

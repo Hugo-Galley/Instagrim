@@ -27,49 +27,87 @@
 .App-link {
   color: #61dafb;
 }
-.MainLayout{
+
+.MainLayout {
   display: flex;
   align-items: flex-start;
 }
-.Espacement{
+
+.Espacement {
   width: 30vw;
-  height: 100vw;
+  height: 100vh;
 }
-.InfoCompte{
+
+.InfoCompte {
   margin-top: 2vw;
-  margin-left: 3vw;
+  margin-left: 2vw;
   width: 30vw;
-  height: 100vw;
+  height: 100vh;
 }
-.container{
+
+.container {
   display: flex;
   align-items: flex-start;
 }
-.BarStory{
+
+.BarStory {
   display: flex;
   gap: 20px;
-  max-width: 40vw;
+  width: 100%;
   justify-content: center;
   white-space: nowrap;
   overflow-x: auto;
 }
-.story{
+
+.story {
   display: inline-block;
   text-align: center;
   margin: 20px;
 }
-.CentreLayout{
-  max-width: 40vw;
+
+.CentreLayout {
+  width: 40vw;
 }
-.LegalCredits{
+
+.LegalCredits {
   color: grey;
   font-size: 0.8em;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Ajout de media queries pour la responsivité */
+@media screen and (max-width: 1200px) {
+
+
+  .Espacement {
+    display: flex;
+  }
+
+  .InfoCompte {
+   display: none;
+  }
+
+  .CentreLayout {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .InfoCompte {
+    display: none;
+  }
+
+
+
+  .BarStory {
+    width: 100%;
   }
 }
