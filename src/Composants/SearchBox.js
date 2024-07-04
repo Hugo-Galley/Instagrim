@@ -17,9 +17,9 @@ export default function SearchBox(){
             <p>Tout Effacer</p>
             </div>
             <div className="FicheSearch">
-                <FicheContact />
-                <FicheContact />
-                <FicheContact />
+                <FicheContact username={"Hugo"} pseudo={"hugigoo_"} profilePicture={'../items/instaLogo.svg'}/>
+                <FicheContact username={"Hugo"} pseudo={"hugigoo_"} profilePicture={'../items/instaLogo.svg'}/>     
+                <FicheContact username={"Hugo"} pseudo={"hugigoo_"} profilePicture={'../items/instaLogo.svg'}/>
             </div>
         </div>
     )

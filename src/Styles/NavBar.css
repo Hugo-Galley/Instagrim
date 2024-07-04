@@ -1,6 +1,6 @@
 .NavBar li {
   transition: all 0.5s ease-in-out;
-  margin: 1vw;
+  margin:  1vw 0vw;
 }
 .testClass {
   height: 100vh;
@@ -50,7 +50,7 @@
 .Nav-Logo {
   position: fixed;
   top: 2rem;
-  left: 1.5vw;
+  left: 1vw;
   width: 7rem;
   height: auto;
   max-height: 5rem;

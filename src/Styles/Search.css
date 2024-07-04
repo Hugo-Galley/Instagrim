@@ -93,3 +93,32 @@
     margin: 1vw;
     font-size: 0.8em;
 }
+@media (max-width: 2200px) {
+    .search-container {
+        max-width: 280px;
+    }
+}
+@media (max-width: 2000px) {
+    .RechercheBox {
+        font-size: 1.5em;
+    }
+    .search-container {
+        max-width: 200px;
+    }
+}
+@media (max-width: 1500px) {
+    .RechercheBox {
+        font-size: 1.3em;
+    }
+    .search-container {
+        max-width: 150px;
+    }
+}
+@media (max-width: 1200px) {
+    .RechercheBox {
+        font-size: 1em;
+    }
+    .search-container {
+        max-width: 100px;
+    }
+}
