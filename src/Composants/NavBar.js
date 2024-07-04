@@ -1,11 +1,13 @@
 import '../Styles/NavBar.css';
 import { Link, useLocation } from 'react-router-dom';
 import instaLogo from '../items/instaLogoWhite.svg'
+import SearchBox from './SearchBox';
 
 function NavBar(){
   const location = useLocation()
     return(
-      <nav className={`NavBar ${location.pathname === '/Search' ? 'profil-active' : ''}`}>
+      <div className={`testClass ${location.pathname === '/Search' ? 'profil-active' : ''}`}>
+        <nav className={`NavBar ${location.pathname === '/Search' ? 'profil-active' : ''}`}>
             <div>
               <Link to='/'>
                 <img src={instaLogo} alt="Logo Instagram" className='Nav-Logo'/>
@@ -103,6 +105,13 @@ function NavBar(){
                 </ul>
             </div>
         </nav>
+        <div className='SearchBox'>
+        <SearchBox />
+        </div>
+
+      </div>
+
+      
     )
 }
 

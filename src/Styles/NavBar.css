@@ -1,3 +1,20 @@
+.NavBar li {
+  transition: all 0.5s ease-in-out;
+  margin: 1vw;
+}
+.testClass {
+  height: 100vh;
+  width: 450px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .NavBar {
   border-right: solid 1px gray;
   height: 100vh;
@@ -10,6 +27,14 @@
   transition: width 0.3s ease;
   display: flex;
   flex-direction: column;
+}
+
+.SearchBox {
+
+  width: 240px;
+  display: none;
+  border-right: solid 1px grey;
+
 }
 
 .Nav-Menu {
@@ -39,14 +64,19 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 250px;
+  box-sizing: border-box;
 }
+
 .link-item {
   display: flex;
   align-items: center;
-  padding: 0.5rem 0rem;
+  padding: 0.5rem 1rem;
   width: 100%;
   transition: all 0.2s ease-in-out;
   position: relative;
+  text-decoration: none;
+  color: inherit;
 }
 
 .link-item::before {
@@ -56,16 +86,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.1); /* Fond gris très transparent */
-  backdrop-filter: blur(10px); /* Effet de flou */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   transition: all 0.2s ease-in-out;
-  opacity: 0; /* Initialement caché */
-  z-index: 0; /* Derrière le contenu */
-  border-radius: 10px 10px;
+  opacity: 0;
+  z-index: 0;
+  border-radius: 10px;
 }
 
 .link-item:hover::before {
-  opacity: 1; /* Afficher au survol */
+  opacity: 1;
 }
 
 .link-item p {
@@ -75,12 +105,12 @@
   text-overflow: ellipsis;
   transition: color 0.2s ease-in-out;
   position: relative;
-  z-index: 1; /* Devant le pseudo-élément */
+  z-index: 1;
 }
 
 .link-item svg {
   position: relative;
-  z-index: 1; /* Devant le pseudo-élément */
+  z-index: 1;
 }
 
 ul {
@@ -100,10 +130,24 @@ svg {
   .NavBar {
     width: 200px;
   }
+  .SearchBox {
+    width: calc(100vw - 200px);
+    margin-left: 200px;
+  }
+  .Nav-PlusInfo {
+    width: 200px;
+  }
 }
 
 @media (max-width: 1024px) {
   .NavBar {
+    width: 180px;
+  }
+  .SearchBox {
+    width: calc(100vw - 180px);
+    margin-left: 180px;
+  }
+  .Nav-PlusInfo {
     width: 180px;
   }
 }
@@ -112,21 +156,25 @@ svg {
   .NavBar {
     width: 70px;
   }
-
+  .SearchBox {
+    width: calc(100vw - 70px);
+    margin-left: 70px;
+  }
   .Nav-Logo {
     display: none;
   }
-
   .link-item p {
     display: none;
   }
-
   .Nav-PlusInfo {
     display: none;
   }
 }
 
 @media (max-width: 480px) {
+  .NavContainer {
+    flex-direction: column;
+  }
   .NavBar {
     width: 100%;
     height: auto;
@@ -134,40 +182,39 @@ svg {
     border-right: none;
     border-bottom: solid 1px gray;
   }
-
+  .SearchBox {
+    width: 100%;
+    margin-left: 0;
+  }
   .Nav-Menu {
     flex-direction: row;
     justify-content: space-around;
     margin-top: 7rem;
     padding-bottom: 1rem;
   }
-
   .Nav-Logo {
     top: 1rem;
     width: 5rem;
   }
-
   .link-item {
     flex-direction: column;
     padding: 0.5rem;
     margin: 0;
   }
-
   .link-item p {
     display: block;
     margin: 0.5rem 0 0 0;
     font-size: 0.8em;
     text-align: center;
   }
-
   svg {
     margin-right: 0;
   }
-
   .Nav-PlusInfo {
     position: static;
     display: flex;
     justify-content: space-around;
     padding: 1rem;
+    width: 100%;
   }
 }
