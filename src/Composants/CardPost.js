@@ -6,7 +6,7 @@ import contentPng from '../items/content.jpg'
 function EnteteCard({username,profilePicture}){
     return(
         <div className="EnTete">
-            <img src={profilePicture}/>
+            <img src={profilePicture} alt={profilePicture}/>
             <p>{username}</p>
         </div>
     )

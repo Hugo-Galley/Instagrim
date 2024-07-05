@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../Composants/NavBar';
 import BarStory from '../Composants/BarreStory'
 import CardPost from '../Composants/CardPost';
 import FicheContact from '../Composants/FicheContact';
