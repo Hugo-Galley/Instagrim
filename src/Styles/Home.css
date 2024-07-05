@@ -198,6 +198,9 @@ p {
 
 .info-name {
   margin-top: 0.5vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .Suivre {

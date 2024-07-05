@@ -4,7 +4,7 @@ export default function FicheContact({username,pseudo,profilePicture}){
             <img src={profilePicture} alt="profilePicture"/>
             <div className="info-name">
                 <p>{username}</p>
-                <p>{pseudo}</p>
+                <p className="pseudo-message">{pseudo}</p>
             </div>
             <p className='Suivre'>Suivre</p>
         </div>

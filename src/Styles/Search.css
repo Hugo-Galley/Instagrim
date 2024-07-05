@@ -1,29 +1,29 @@
-.profil-active .link-item{
+.navbar-search .link-item{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 0px;
 }
-.profil-active .link-item p{
+.navbar-search .link-item p{
     visibility: hidden;
      margin-top: 13px; 
 }
-.profil-active .Nav-Logo{
+.navbar-search .Nav-Logo{
     visibility: hidden;
 }
-.profil-active .NavBar li{
+.navbar-search .NavBar li{
     transition: all 0.5s ease-in-out;
     margin: 0;
 }
-.profil-active .NavBar{
+.navbar-search .NavBar{
     border-right: none;
     width: 3% !important;
 }
-.profil-active .SearchBox{
+.navbar-search .SearchBox{
     display: block;
     width: 85%;
 }
-.profil-active{
+.navbar-search{
     width: 20% !important;
 }
 .search-container {
@@ -121,4 +121,7 @@
     .search-container {
         max-width: 100px;
     }
+}
+.navbar-notif .SearchBox{
+    display: block;
 }

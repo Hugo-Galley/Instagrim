@@ -30,11 +30,12 @@
 }
 
 .SearchBox {
-
   width: 240px;
   display: none;
   border-right: solid 1px grey;
-
+}
+.NotifBox{
+  display: none;
 }
 
 .Nav-Menu {

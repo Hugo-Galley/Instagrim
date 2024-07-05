@@ -1,0 +1,74 @@
+.navbar-message .link-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+}
+.navbar-message .link-item p{
+    visibility: hidden;
+     margin-top: 13px; 
+}
+.navbar-message .Nav-Logo{
+    visibility: hidden;
+}
+.navbar-message .NavBar li{
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+}
+.navbar-message .NavBar{
+    border-right: none;
+    width: 3% !important;
+}
+.navbar-message .SearchBox{
+    display: none !important;
+}
+.navbar-message{
+    width: 20% !important;
+}
+.navbar-message .NotifBox{
+    border-right: 1px solid grey;
+    display: block;
+    width: 90%;
+}
+.top-info-notif ,.InfoNull{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0vw 1vw 0vw 1vw;
+}
+.top-info-notif{
+    margin-top: 1vw;
+}
+.top-info-notif p{
+    font-size: 1.3em;
+}
+.texteNull{
+    color: grey;
+    font-size: 0.8em;
+}
+.Note{
+    margin: 1vw;
+    display: flex;
+    flex-direction: row;
+}
+.navbar-message .Note .StoryUne img{
+    width: 60%;
+    height: 90%;
+}
+.navbar-message .Note .StoryUne {
+    margin: 0;
+    margin-left: 1px;
+    text-align: none;
+    justify-content: none;
+}
+.Notifications{
+    margin-top: 1vw;
+    margin-left: 1vw;
+
+    width: 100%;
+}
+.NotifBox .info-name .pseudo-message {
+    margin-top: 0.3vw;
+    font-size: 0.8em;
+    color: rgba(211, 209, 209, 0.691);
+  }
