@@ -72,3 +72,18 @@
     font-size: 0.8em;
     color: rgba(211, 209, 209, 0.691);
   }
+  @media (max-width: 1800px){
+     .Notifications{
+        margin-left: 2vw;
+    }
+}
+@media (max-width: 1400px){
+    .navbar-message{
+        width: 30vw !important;
+    }
+}
+@media (max-width: 1000px){
+    .navbar-message .NavBar{
+        width: 5vw !important;
+    }
+}
