@@ -19,7 +19,7 @@ L'objectif principal de ce projet est de renforcer mes compétences en JavaScrip
 ## Installation
 
 1. Clonez ce repository sur votre machine locale.
-2. Naviguez vers le répertoire du projet : `cd instagram-clone`.
+2. Naviguez vers le répertoire du projet : `cd instagrim`.
 3. Installez les dépendances nécessaires avec npm : `npm install`.
 4. Lancez l'application en mode développement : `npm start`.
 
