@@ -1,0 +1,52 @@
+.navbar-notif .link-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0px;
+}
+.navbar-notif .link-item p{
+    visibility: hidden;
+     margin-top: 13px; 
+}
+.navbar-notif .Nav-Logo{
+    visibility: hidden;
+}
+.navbar-notif .NavBar li{
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+}
+.navbar-notif .NavBar{
+    border-right: none;
+    width: 3% !important;
+}
+.navbar-notif{
+
+    width: 15% !important;
+}
+.navbar-notif .MessageBox{
+    display: none !important;
+}
+.navbar-notif .SearchBox{
+    display: none !important;
+}
+.navbar-notif .NotifBox{
+
+    border-right: solid 1px grey;
+    width: 80%;
+    display: block;
+}
+.navbar-notif .TitreNotif{
+    font-size: 2em;
+}
+.BlocNotif{
+    border-bottom: solid 1px grey;
+}
+.BlocNotif .Suivre{
+    display: none;
+}
+.BlocNotif .info-name{
+    font-size: 0.8em;
+    overflow:inherit !important;
+    text-overflow:inherit !important;
+    white-space: wrap !important;
+}

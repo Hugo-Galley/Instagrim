@@ -1,9 +1,10 @@
 import '../Styles/NavBar.css';
 import React, { useState } from 'react';
-import { Link, useLocation} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import instaLogo from '../items/instaLogoWhite.svg'
 import SearchBox from './SearchBox';
-import Notifications from './NotificationsBox';
+import Message from './MessageBox';
+import Notification from './NotificationsBox';
 
 function NavBar(){
   const [activeItem, setActiveItem] = useState('');
@@ -11,7 +12,7 @@ function NavBar(){
     setActiveItem(item);
   };
     return(
-      <div className={`testClass ${activeItem === 'search' ? 'navbar-search' : ''} ${activeItem === 'message' ? 'navbar-message' : ''}`} >
+      <div className={`testClass ${activeItem === 'search' ? 'navbar-search' : ''} ${activeItem === 'message' ? 'navbar-message' : ''} ${activeItem === 'notifications' ? 'navbar-notif' : ''}`} >
         <nav className="NavBar">
             <div>
               <Link to='/'>
@@ -110,8 +111,11 @@ function NavBar(){
         <div className='SearchBox'>
         <SearchBox />
         </div>
+        <div className='MessageBox'>
+          <Message />
+        </div>
         <div className='NotifBox'>
-          <Notifications />
+          <Notification />
         </div>
 
       </div>

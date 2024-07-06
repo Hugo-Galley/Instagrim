@@ -34,10 +34,12 @@
   display: none;
   border-right: solid 1px grey;
 }
+.MessageBox{
+  display: none;
+}
 .NotifBox{
   display: none;
 }
-
 .Nav-Menu {
   font-size: 1.2em;
   display: flex;

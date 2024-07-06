@@ -196,10 +196,10 @@ p {
   margin: 0 0.5vw;
 }
 
-.info-name {
+.MessageBox .info-name {
   margin-top: 0.5vw;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow:inherit;
   white-space: nowrap;
 }
 
