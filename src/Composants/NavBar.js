@@ -1,4 +1,5 @@
 import '../Styles/NavBar.css';
+import '../Styles/Search.css'
 import React, { useState } from 'react';
 import { Link} from 'react-router-dom';
 import instaLogo from '../items/instaLogoWhite.svg'
@@ -7,6 +8,10 @@ import Message from './MessageBox';
 import Notification from './NotificationsBox';
 
 function NavBar(){
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
   const [activeItem, setActiveItem] = useState('');
   const handleItemClick = (item) => {
     setActiveItem(item);
@@ -30,14 +35,16 @@ function NavBar(){
                       </Link>
                     </li>
                       
-                    <li onClick={() => handleItemClick('search')}>                      <Link className='link-item'>
+                    <li onClick={() => handleItemClick('search')}> 
+                      <Link className='link-item'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                         </svg>
                           <p>Recherche</p>
                       </Link>
                     </li>
-                    <li onClick={() => handleItemClick('discover')}>                      <Link to='/discover' className='link-item'>
+                    <li onClick={() => handleItemClick('discover')}> 
+                                         <Link to='/discover' className='link-item'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
                           <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
                           <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
@@ -69,8 +76,8 @@ function NavBar(){
                             <p>Notifications</p>
                       </Link>
                     </li>
-                    <li onClick={() => handleItemClick('create')}>
-                      <Link className='link-item'>
+                    <li onClick={() => { handleItemClick('create'); openModal(); }}>
+                      <Link to='/Search' className='link-item'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
                           <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                           <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
@@ -117,7 +124,30 @@ function NavBar(){
         <div className='NotifBox'>
           <Notification />
         </div>
-
+        <div>
+        <div>
+      {isOpen && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <h2 className="modal-title">Créer une nouvelle publication</h2>
+            <div className="upload-area">
+              <div className="icon-container">
+              <svg aria-label="Icône pour représenter le contenu multimédia, comme les images ou les vidéos" class="icon-import" fill="currentColor" height="77" role="img" viewBox="0 0 97.6 77.3" width="96">
+                <title>Icône pour représenter le contenu multimédia, comme les images ou les vidéos</title>
+                <path d="M16.3 24h.3c2.8-.2 4.9-2.6 4.8-5.4-.2-2.8-2.6-4.9-5.4-4.8s-4.9 2.6-4.8 5.4c.1 2.7 2.4 4.8 5.1 4.8zm-2.4-7.2c.5-.6 1.3-1 2.1-1h.2c1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-.8.3-1.5.8-2.1z" fill="currentColor"></path>
+                <path d="M84.7 18.4 58 16.9l-.2-3c-.3-5.7-5.2-10.1-11-9.8L12.9 6c-5.7.3-10.1 5.3-9.8 11L5 51v.8c.7 5.2 5.1 9.1 10.3 9.1h.6l21.7-1.2v.6c-.3 5.7 4 10.7 9.8 11l34 2h.6c5.5 0 10.1-4.3 10.4-9.8l2-34c.4-5.8-4-10.7-9.7-11.1zM7.2 10.8C8.7 9.1 10.8 8.1 13 8l34-1.9c4.6-.3 8.6 3.3 8.9 7.9l.2 2.8-5.3-.3c-5.7-.3-10.7 4-11 9.8l-.6 9.5-9.5 10.7c-.2.3-.6.4-1 .5-.4 0-.7-.1-1-.4l-7.8-7c-1.4-1.3-3.5-1.1-4.8.3L7 49 5.2 17c-.2-2.3.6-4.5 2-6.2zm8.7 48c-4.3.2-8.1-2.8-8.8-7.1l9.4-10.5c.2-.3.6-.4 1-.5.4 0 .7.1 1 .4l7.8 7c.7.6 1.6.9 2.5.9.9 0 1.7-.5 2.3-1.1l7.8-8.8-1.1 18.6-21.9 1.1zm76.5-29.5-2 34c-.3 4.6-4.3 8.2-8.9 7.9l-34-2c-4.6-.3-8.2-4.3-7.9-8.9l2-34c.3-4.4 3.9-7.9 8.4-7.9h.5l34 2c4.7.3 8.2 4.3 7.9 8.9z" fill="currentColor"></path>
+                <path d="M78.2 41.6 61.3 30.5c-2.1-1.4-4.9-.8-6.2 1.3-.4.7-.7 1.4-.7 2.2l-1.2 20.1c-.1 2.5 1.7 4.6 4.2 4.8h.3c.7 0 1.4-.2 2-.5l18-9c2.2-1.1 3.1-3.8 2-6-.4-.7-.9-1.3-1.5-1.8zm-1.4 6-18 9c-.4.2-.8.3-1.3.3-.4 0-.9-.2-1.2-.4-.7-.5-1.2-1.3-1.1-2.2l1.2-20.1c.1-.9.6-1.7 1.4-2.1.8-.4 1.7-.3 2.5.1L77 43.3c1.2.8 1.5 2.3.7 3.4-.2.4-.5.7-.9.9z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <p className="upload-text">Faites glisser les photos et les vidéos ici</p>
+              <button type='file' className="select-btn">Choisisez votre fichier</button>
+            </div>
+            <button className="close-modal-btn" onClick={closeModal}>×</button>
+          </div>
+        </div>
+      )}
+    </div>
+        </div>
       </div>
 
       
