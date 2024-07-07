@@ -4,10 +4,11 @@ import '../Styles/Reels.css'
 export default function  Reel(){
     return(
         <div className="FeedReels">
-            <ReelBox/>
-            <ReelBox/>
-            <ReelBox/>
-            <ReelBox/>
+        <div className="FeedReels">
+    <div className="ReelBox"><ReelBox/></div>
+    <div className="ReelBox"><ReelBox/></div>
+    <div className="ReelBox"><ReelBox/></div>
+    </div>
         </div>
 
     );

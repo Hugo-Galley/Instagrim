@@ -1,5 +1,19 @@
-.Reels {
+.FeedReels {
+    display: flex;
+    flex-direction: column; 
+    height: auto; 
+    overflow-y: auto; 
+    scroll-snap-type: y mandatory; 
+}
 
+.ReelBox {
+    scroll-snap-align: start; 
+    padding: 10px; 
+}
+
+
+
+.Reels {
     display: flex;
     flex-direction: row;
     width: 22vw;
