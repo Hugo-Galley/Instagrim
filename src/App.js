@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import NavBar from './Composants/NavBar'; 
 import Profile from './Pages/Profil';
 import Dicover from './Pages/Discover';
+import Reel from './Pages/Reels';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/profil' element={<Profile />} />
         <Route path='/discover' element={<Dicover />} />
+        <Route path='/reels' element={<Reel/>} />
       </Routes>
     </Router>
   );
