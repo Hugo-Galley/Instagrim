@@ -11,10 +11,10 @@ function App() {
     <Router>
           <NavBar />
       <Routes>
-        <Route path='/Instagrim/' element={<Home />} />
-        <Route path='/Instagrim/profil' element={<Profile />} />
-        <Route path='/Instagrim/discover' element={<Dicover />} />
-        <Route path='/Instagrim/reels' element={<Reel/>} />
+        <Route path='/' element={<Home />} />
+        <Route path='/profil' element={<Profile />} />
+        <Route path='/discover' element={<Dicover />} />
+        <Route path='/reels' element={<Reel/>} />
       </Routes>
     </Router>
   );
