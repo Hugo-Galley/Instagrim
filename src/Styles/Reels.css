@@ -167,3 +167,36 @@
       transform: translateX(-100%);
     }
   }
+
+  @media screen and (max-width: 2000px){
+    .Reels{
+        width: 27vw;
+        height: 35vw;
+    }
+    .MainVideo{
+        width: 25vw;
+        height: 35vw;
+    }
+  }
+@media  screen and (max-width: 1500px) {
+    .Reels{
+        width: 37vw;
+        height: 47vw;
+    }
+    .MainVideo{
+        width: 37vw;
+        height: 47vw;
+    }
+    
+}
+@media  screen and (max-width: 1100px) {
+    .Reels{
+        width: 35vw;
+        height: 45vw;
+    }
+    .MainVideo{
+        width: 35vw;
+        height: 45vw;
+    }
+    
+}
