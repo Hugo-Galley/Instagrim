@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Instagrim/static/css/main.234cc90e.css",
+    "main.js": "/Instagrim/static/js/main.543d687e.js",
+    "static/js/453.4c3f8e48.chunk.js": "/Instagrim/static/js/453.4c3f8e48.chunk.js",
+    "static/media/croco.jpeg": "/Instagrim/static/media/croco.d57f17fbebbf8636241a.jpeg",
+    "static/media/content.jpg": "/Instagrim/static/media/content.395a6a8d9a62d7ae0748.jpg",
+    "static/media/99678890.jpeg": "/Instagrim/static/media/99678890.31d6bf83a660441289b4.jpeg",
+    "static/media/instaLogoWhite.svg": "/Instagrim/static/media/instaLogoWhite.97aa448732563c28276a735de6135e99.svg",
+    "index.html": "/Instagrim/index.html",
+    "main.234cc90e.css.map": "/Instagrim/static/css/main.234cc90e.css.map",
+    "main.543d687e.js.map": "/Instagrim/static/js/main.543d687e.js.map",
+    "453.4c3f8e48.chunk.js.map": "/Instagrim/static/js/453.4c3f8e48.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.234cc90e.css",
+    "static/js/main.543d687e.js"
+  ]
+}
