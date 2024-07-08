@@ -76,6 +76,9 @@
      .Notifications{
         margin-left: 2vw;
     }
+    .navbar-message{
+        margin-left: 1vw;
+    }
 }
 @media (max-width: 1400px){
     .navbar-message{

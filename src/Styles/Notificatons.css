@@ -50,3 +50,8 @@
     text-overflow:inherit !important;
     white-space: wrap !important;
 }
+@media screen and (max-width:2000px) {
+    .navbar-notif{
+        width: 25vw !important;
+    }
+}

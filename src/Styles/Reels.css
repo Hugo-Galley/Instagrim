@@ -167,7 +167,9 @@
       transform: translateX(-100%);
     }
   }
-
+.Heart svg:hover{
+  color: red;
+}
   @media screen and (max-width: 2000px){
     .Reels{
         width: 27vw;

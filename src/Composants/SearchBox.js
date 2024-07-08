@@ -1,4 +1,5 @@
 import FicheContact from "./FicheContact"
+import PpTest from '../items/99678890.jpeg'
 
 export default function SearchBox(){
     return(
@@ -17,9 +18,9 @@ export default function SearchBox(){
             <p>Tout Effacer</p>
             </div>
             <div className="FicheSearch">
-                <FicheContact username={"Hugo"} pseudo={"hugigoo_"} profilePicture={'../items/instaLogo.svg'}/>
-                <FicheContact username={"Hugo"} pseudo={"hugigoo_"} profilePicture={'../items/instaLogo.svg'}/>     
-                <FicheContact username={"Hugo"} pseudo={"hugigoo_"} profilePicture={'../items/instaLogo.svg'}/>
+                <FicheContact username={"Hugo"} pseudo={"hugigoo_"} profilePicture={PpTest}/>
+                <FicheContact username={"Hugo"} pseudo={"hugigoo_"} profilePicture={PpTest}/>     
+                <FicheContact username={"Hugo"} pseudo={"hugigoo_"} profilePicture={PpTest}/>
             </div>
         </div>
     )
