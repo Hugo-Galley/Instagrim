@@ -5,8 +5,9 @@ import FicheContact from '../Composants/FicheContact';
 import test from '../items/99678890.jpeg'
 
 function Home() {
+  let videoPathArray = [test,test,test];
+  let contactArray = [test,test,test,test];
   return (
-    <React.Fragment>
       <div className='container'>
 
         <div className='MainLayout'>
@@ -16,25 +17,18 @@ function Home() {
                 <BarStory />
             </div>
             <div className='Feed'>
-              <CardPost key={1} content={"video.mp4"} />
-              <CardPost key={1} content={"video.mp4"} />
-              <CardPost key={1} content={"video.mp4"} />
+            { videoPathArray.map((index)=> ( <CardPost key={index} content={test} /> )) }
             </div>
           </div>
           </div>
           <div className='InfoCompte'>
-            <FicheContact key={1} username={"hugigogo_"} pseudo={"SuperBg"} profilePicture={test} />
+            <FicheContact key={12} username={"hugigogo_"} pseudo={"SuperBg"} profilePicture={test} />
             <p className='SugForYou'>Suggestions pour vous</p>
-            <FicheContact key={1} username={"hugigogo_"} pseudo={"SuperBg"} profilePicture={test} />
-            <FicheContact key={1} username={"hugigogo_"} pseudo={"SuperBg"} profilePicture={test} />
-            <FicheContact key={1} username={"hugigogo_"} pseudo={"SuperBg"} profilePicture={test} />
-            <FicheContact key={1} username={"hugigogo_"} pseudo={"SuperBg"} profilePicture={test} />
+            {contactArray.map((path, index)=> (<FicheContact key={index} username={"hugigogo_"} pseudo={"SuperBg"} profilePicture={path} />))}
             <p className='LegalCredits'>À propos Aide Presse API Emplois
             <br/>Confidentialité Conditions Lieux Langue <br/>Meta Verified</p>
           </div>
       </div>
-    
-    </React.Fragment>
   );
 }
 

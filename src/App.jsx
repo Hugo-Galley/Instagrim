@@ -11,7 +11,7 @@ function App() {
     <Router>
           <NavBar />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/Instagrim' element={<Home />} />
         <Route path='/profil' element={<Profile />} />
         <Route path='/discover' element={<Dicover />} />
         <Route path='/reels' element={<Reel/>} />
