@@ -9,7 +9,7 @@ import Reel from './Pages/Reels';
 function App() {
   return (
 
-    <BrowserRouter basename='/Instagrim'>
+    <Router basename='/Instagrim'>
           <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path='/discover' element={<Dicover />} />
         <Route path='/reels' element={<Reel/>} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 export default App
