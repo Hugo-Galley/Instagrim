@@ -13,8 +13,6 @@ L'objectif principal de ce projet est de renforcer mes compétences en JavaScrip
 ## Fonctionnalités
 
 - **Interface Utilisateur (UI) :** Reproduire les principales fonctionnalités de l'interface utilisateur d'Instagram, y compris la mise en page, la navigation entre les pages, et l'affichage des publications.
-  
-- **Intégration avec API fictive :** Simuler l'intégration avec une API fictive pour obtenir et afficher des données similaires à celles d'Instagram (par exemple, les photos, les commentaires, les likes).
 
 ## Installation
 
